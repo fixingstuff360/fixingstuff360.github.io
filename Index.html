@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lu's Mod Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Lu's Mod Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>XSex720</h2>
+            <p>Test</p>
+            <a href="#services" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>We do Send ins and Pre made Consoles</p>
+            <br>
+            <p>Rgh1.2/3 + Jtag All Methods</p>
+        </div>
+    </section>
+
+    <section id="pricing" class="section">
+        <div class="container">
+            <h2>Pricing</h2>
+            <p>Test</p>
+        </div>
+    </section>
+
+    <section id="faq" class="section">
+    <div class="container">
+        <h2>FAQ</h2>
+        <div class="faq">
+            <div class="faq-item">
+                <button class="faq-dropdown">What is RGH? <span class="arrow">▼</span></button>
+                <div class="faq-content">
+                    <p>RGH stands for Reset Glitch Hack, which allows you to run unsigned code on your Xbox 360.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-dropdown">How long does the modding process take? <span class="arrow">▼</span></button>
+                <div class="faq-content">
+                    <p>The process generally takes 1-2 weeks, depending on the method and shipping times.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-dropdown">How long will my RGH console take to arrive? <span class="arrow">▼</span></button>
+                <div class="faq-content">
+                    <p>I use Tracked 48, so usually 2-3 days; however, I am considering upgrading to Tracked 24 to shorten this time.</p>
+                    <p>Customers pay postage on a send-in, but I pay postage when they purchase one of my consoles. Postage is around £6.70 one way.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-dropdown">I don’t have a power supply for my console, what should I do? <span class="arrow">▼</span></button>
+                <div class="faq-content">
+                    <p>Firstly, do NOT buy a fake one as they are bound to have issues and are made with cheap materials, which will not make them last as long. Sometimes I have power supplies in stock, so ask me for one. If I don’t have any, I will direct you to an eBay listing from a seller I trust.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-dropdown">Do you provide warranty on your services? <span class="arrow">▼</span></button>
+                <div class="faq-content">
+                    <p>Yes, we provide a 30-day warranty on all modifications.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="gallery" class="section">
+    <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-grid"></div> 
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us on Discord for support and to proceed with your purchase or send-in.</p>
+        <a href="https://discord.gg/mDukV9hzZK" class="btn" target="_blank">Join Our Discord</a>
+    </div>
+</section>
+
+
+<div class="modal" id="imageModal">
+    <span class="close">&times;</span>
+    <div class="modal-content-container">
+        <span class="arrow left" id="prevImage">&#10094;</span>
+        <img class="modal-content" id="modalImg">
+        <span class="arrow right" id="nextImage">&#10095;</span>
+    </div>
+    <div id="caption"></div>
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Lu's Mod Shop. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

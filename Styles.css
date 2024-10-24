@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0a23;
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1rem 0;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+header.transparent {
+    background-color: transparent;
+}
+
+header.sticky {
+    background-color: #091d48;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #54d0ff;
+}
+
+.hero {
+    background: url('Header.jpg') no-repeat center center/cover;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background: #054b91;
+    color: #fff;
+    padding: 0.7rem 2rem;
+    text-align: center;
+    border-radius: 4px;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #54d0ff;
+}
+
+footer {
+    background: #091d48;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* FAQ Styles */
+.faq {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.faq-dropdown {
+    width: 100%;
+    background-color: #091d48;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+    position: relative;
+}
+
+.faq-dropdown:hover {
+    background-color: #054b91;
+}
+
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease; 
+    background-color: #0a0a23;
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+    border-top: 1px solid #ccc;
+    padding: 0 1rem; 
+}
+
+
+.faq-content.open {
+    max-height: 200px; /
+    padding: 1rem; 
+}
+
+
+.arrow {
+    color: white;
+    font-size: 20px; 
+    cursor: pointer;
+    user-select: none;
+    padding-left: 10px; 
+    vertical-align: middle; 
+}
+
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content-container {
+    position: relative;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-content {
+    width: auto;
+    max-width: 700px;
+    height: auto;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #54d0ff;
+    cursor: pointer;
+}
+
+#caption {
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-open {
+    overflow: hidden;
+}
