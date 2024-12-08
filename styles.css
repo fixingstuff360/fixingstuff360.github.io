@@ -88,6 +88,7 @@ nav ul li a:hover {
 .section {
     padding: 2rem 0;
     text-align: center;
+	scroll-margin-top: 100px;
 }
 
 .btn {
@@ -176,21 +177,25 @@ footer p {
 }
 
 
+/* Gallery Section - Center images */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin: 20px 0;
 }
 
+/* Style for images inside the gallery */
 .gallery-grid img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
+    max-width: 150px; /* Set max image size */
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+    border: 2px solid #333;
+    border-radius: 4px;
 }
-
 .gallery-grid img:hover {
     transform: scale(1.05);
 }
