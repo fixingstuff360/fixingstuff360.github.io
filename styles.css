@@ -257,3 +257,41 @@ footer p {
 .modal-open {
     overflow: hidden;
 }
+
+ .consoles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.console-item {
+    text-align: center; /* Center horizontally */
+    border: 1px solid #555;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #1c1c3a;
+    transition: transform 0.2s ease;
+    display: flex; /* Use flexbox for vertical centering */
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.console-item:hover {
+    transform: scale(1.05);
+}
+
+.console-item img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #555;
+    margin-bottom: 0.8rem;
+}
+
+.console-description {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0; 
+    text-align: center; /* Ensures horizontal centering */
+}
