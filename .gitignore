@@ -8,6 +8,7 @@ __pycache__/
 *.so
 
 gui.py
+gui.exe
 
 # Distribution / packaging
 .Python
