@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const content = this.nextElementSibling;
             content?.classList.toggle('open');
             
-            // Close other dropdowns
+            
             faqDropdowns.forEach(otherBtn => {
                 if (otherBtn !== this) {
                     otherBtn.nextElementSibling?.classList.remove('open');
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let images = [];
 
     function loadGalleryImages() {
-        images = Array.from({length: 23}, (_, i) => `image${i+1}.jpg`);
+        images = Array.from({length: 24}, (_, i) => `image${i+1}.jpg`);
         
         images.forEach(image => {
             const imgElement = document.createElement('img');
