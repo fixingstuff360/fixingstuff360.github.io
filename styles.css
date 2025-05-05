@@ -121,12 +121,12 @@ nav ul li a:hover {
 .hero {
     background: url('Header.jpg') no-repeat center center/cover;
     height: 100vh;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 2rem;
+    text-align: center;
 }
 
 .hero h2 {
@@ -150,7 +150,6 @@ nav ul li a:hover {
     background: #054b91;
     color: #fff;
     padding: 0.7rem 2rem;
-    text-align: center;
     border-radius: 4px;
     transition: background 0.3s;
     text-decoration: none;
@@ -360,3 +359,30 @@ footer p {
 
 @media (max-width: 768px) {
     .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-item {
+    background-color: #054b91;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-item:hover {
+    background-color: #054bff;
+    transform: translateY(-2px);
+}
+
+.contact-grid > * {
+    justify-self: center;
+    width: 100%;
+    max-width: 250px;
+}
