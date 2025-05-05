@@ -114,6 +114,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('menu-toggle');
+  const navList = document.getElementById('nav-list');
+
+  btn.addEventListener('click', () => {
+    navList.classList.toggle('show');
+  });
+
+  // Optional: hide menu when a link is clicked
+  navList.querySelectorAll('a').forEach(a =>
+    a.addEventListener('click', () => navList.classList.remove('show'))
+  );
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     const galleryGrid = document.querySelector('.gallery-grid');
