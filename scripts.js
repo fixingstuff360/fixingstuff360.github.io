@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navList.classList.toggle('show');
   });
 
-  // Optional: hide menu when a link is clicked
+
   navList.querySelectorAll('a').forEach(a =>
     a.addEventListener('click', () => navList.classList.remove('show'))
   );
