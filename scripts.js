@@ -1,4 +1,4 @@
-// Smooth scrolling for anchor links
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -8,13 +8,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Sticky header on scroll
+
 window.addEventListener('scroll', function () {
     const header = document.querySelector('header');
     header?.classList.toggle('sticky', window.scrollY > 50);
 });
 
-// FAQ dropdown functionality
+
 document.addEventListener('DOMContentLoaded', function () {
     const faqDropdowns = document.querySelectorAll('.faq-dropdown');
 
@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Console Modal Functionality (UPDATED WITH 40-CHAR TRUNCATION)
 document.addEventListener('DOMContentLoaded', () => {
     const consoleItems = document.querySelectorAll('.console-item');
     const consoleData = [];
@@ -44,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevConsoleBtn = document.getElementById('prevConsole');
     const nextConsoleBtn = document.getElementById('nextConsole');
 
-    // Safe element checking
     if (!consoleModal || !consoleModalImg || !consoleInfo) return;
 
     let currentConsoleIndex = 0;
@@ -57,7 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
         
         consoleData.push({ img, alt, fullDesc });
 
-        // 40-character truncation with ellipsis
         if (fullDesc.length > 40 && descElem) {
             descElem.innerHTML = fullDesc.slice(0, 40) + '...';
         }
@@ -93,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Safe event listener binding
+
     prevConsoleBtn?.addEventListener('click', () => {
         currentConsoleIndex = (currentConsoleIndex - 1 + consoleData.length) % consoleData.length;
         updateConsoleModal();
@@ -117,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Gallery modal functionality (UPDATED WITH SAFETY CHECKS)
+
 document.addEventListener('DOMContentLoaded', () => {
     const galleryGrid = document.querySelector('.gallery-grid');
     const imageModal = document.getElementById('imageModal');
